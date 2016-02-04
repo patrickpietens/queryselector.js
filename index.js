@@ -1,7 +1,5 @@
 'use strict';
 
-import assert from 'assert';
-
 /**
  * Returns a Node object that match a specified group of CSS selectors in the document or specific context.
  * If there are more than one matches or `returnList` is set to `true`  it will return a NodeList object instead.

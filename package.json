@@ -1,0 +1,26 @@
+{
+  "name": "query",
+  "version": "1.0.0",
+  "description": "Helper function for querySelectorAll returning all elements in the DOM that matches a specified CSS selector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickpietens/query.git"
+  },
+  "keywords": [
+    "query",
+    "querySelectorAll",
+    "jquery",
+    "Node",
+    "NodeList"
+  ],
+  "author": "Patrick Pietens <hello@patrickpietens.com> (http://patrickpietens.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickpietens/query/issues"
+  },
+  "homepage": "https://github.com/patrickpietens/query#readme"
+}
