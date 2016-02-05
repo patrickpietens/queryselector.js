@@ -1,5 +1,5 @@
 {
-  "name": "query",
+  "name": "query-module",
   "version": "1.0.1",
   "description": "Helper function for querySelectorAll returning all elements in the DOM that matches a specified CSS selector",
   "main": "index.js",
