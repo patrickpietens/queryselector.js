@@ -1,14 +1,14 @@
 {
-  "name": "selector.js",
-  "version": "1.0.3",
-  "description": "Helper function for querySelectorAll returning all elements in the DOM that matches a specified CSS selector",
+  "name": "selectjs",
+  "version": "1.0.1",
+  "description": "Helper function returning all elements in the DOM that matches a specified CSS selector",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patrickpietens/selector.js.git"
+    "url": "git+https://github.com/patrickpietens/selectjs.git"
   },
   "keywords": [
     "query",
@@ -23,9 +23,9 @@
   "author": "Patrick Pietens <hello@patrickpietens.com> (http://patrickpietens.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/patrickpietens/selector/issues"
+    "url": "https://github.com/patrickpietens/selectjs/issues"
   },
-  "homepage": "https://github.com/patrickpietens/selector#readme",
+  "homepage": "https://github.com/patrickpietens/selectjs#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-if": "^2.0.0",
