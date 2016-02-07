@@ -23,9 +23,9 @@
   "author": "Patrick Pietens <hello@patrickpietens.com> (http://patrickpietens.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/patrickpietens/query/issues"
+    "url": "https://github.com/patrickpietens/selector/issues"
   },
-  "homepage": "https://github.com/patrickpietens/query#readme",
+  "homepage": "https://github.com/patrickpietens/selector#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-if": "^2.0.0",
