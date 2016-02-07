@@ -1,8 +1,8 @@
 {
   "name": "selectjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helper function returning all elements in the DOM that matches a specified CSS selector",
-  "main": "dist/index.js",
+  "main": "dist/select.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
