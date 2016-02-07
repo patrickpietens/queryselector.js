@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/patrickpietens/selectjs#readme",
   "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
     "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
     "gulp-if": "^2.0.0",
     "gulp-notify": "^2.2.0",
     "gulp-uglify": "^1.5.1",

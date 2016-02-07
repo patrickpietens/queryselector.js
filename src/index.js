@@ -9,16 +9,12 @@
  * @param  {Boolean} returnList 	If set to true a NodeList object will be returned. Default is `false`
  * @return {Nodelist|Node|null}
  */
-function selector(selectors, context, returnList) {
+function select(selectors, context, returnList = false) {
 	if (typeof selectors !== 'string') {
 		throw new Error('Required argument selectors is not a String or undefined');
 	}
 
-	if (typeof returnList === 'undefined') {
-		returnList = false;
-	}
-
-	var myResult;
+	let myResult;
 	if (context instanceof Node) {
         myResult = context.querySelectorAll(selectors);
 	} else {
