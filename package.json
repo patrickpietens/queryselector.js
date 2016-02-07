@@ -1,6 +1,6 @@
 {
   "name": "selector.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Helper function for querySelectorAll returning all elements in the DOM that matches a specified CSS selector",
   "main": "dist/index.js",
   "scripts": {
