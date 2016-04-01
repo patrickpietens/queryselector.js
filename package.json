@@ -1,14 +1,16 @@
 {
-  "name": "selectjs",
-  "version": "1.0.2",
+  "name": "queryselector.js",
+  "version": "1.0.0",
   "description": "Helper function returning all elements in the DOM that matches a specified CSS selector",
-  "main": "dist/select.js",
+  "main": "dist/queryselector.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "development": "NODE_ENV=development gulp",
+    "production": "NODE_ENV=production gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patrickpietens/selectjs.git"
+    "url": "git+https://github.com/patrickpietens/queryselector.js.git"
   },
   "keywords": [
     "query",
@@ -23,9 +25,9 @@
   "author": "Patrick Pietens <hello@patrickpietens.com> (http://patrickpietens.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/patrickpietens/selectjs/issues"
+    "url": "https://github.com/patrickpietens/queryselector.js/issues"
   },
-  "homepage": "https://github.com/patrickpietens/selectjs#readme",
+  "homepage": "https://github.com/patrickpietens/queryselector.js#readme",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "gulp": "^3.9.0",

@@ -1,3 +1,23 @@
+# queryselector.js
+Helper function returning all elements in the DOM that matches a specified CSS selector.
+Returns null when no elements were found.
+
+## Example
+```javascript
+import $$ from 'queryselector.js';
+
+let myElement = $$('#foobar');
+if (!!myElement) {
+    console.log(myElement);
+}
+```
+
+## Installation
+```bash
+$ npm install queryselector.js --save
+```
+
+## License
 The MIT License (MIT)
 
 Copyright (c) 2016 Patrick Pietens
