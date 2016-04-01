@@ -21,7 +21,7 @@ gulp.task('default', () => {
 
     let myUmdOptions = {
         templateName: 'returnExports',
-        exports: (file) => 'select',
+        exports: (file) => 'queryselector',
     };
 
     let myBabelOptions = {

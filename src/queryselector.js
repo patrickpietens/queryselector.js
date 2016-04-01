@@ -9,7 +9,7 @@
  * @param  {Boolean} returnList 	If set to true a NodeList object will be returned. Default is `false`
  * @return {Nodelist|Node|null}
  */
-function select(selectors, context, returnList = false) {
+const queryselector = (selectors, context, returnList = false) => {
 	if (typeof selectors !== 'string') {
 		throw new Error('Required argument selectors is not a String or undefined');
 	}
@@ -29,3 +29,17 @@ function select(selectors, context, returnList = false) {
 		return myResult;
 	}
 };
+
+
+/**
+ * Adds a shortcut for finding elements on the page using the querySelectorAll method. Returns the object if only one
+ * result was found. Otherwise returning an array containing all found elements.
+ *
+ * @param  {String} selector    	String representing the specific CSS selector
+ * @param  {Boolean} returnList 	If set to true a NodeList object will be returned. Default is `false`
+ */
+if (!Node.prototype.find) {
+	window.find = Node.prototype.find = function(selector, returnList = false) {
+		return select(this, selector, returnList);
+	};
+}

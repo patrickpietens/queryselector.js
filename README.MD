@@ -6,10 +6,10 @@ Returns null when no elements were found.
 ```javascript
 import $$ from 'queryselector.js';
 
-let myElement = $$('#foobar');
-if (!!myElement) {
-    console.log(myElement);
-}
+let myFoo = $$('#foo');
+
+// A find method is added to the Node prototype:
+let myBar = myFoo.find('.bar');
 ```
 
 ## Installation
