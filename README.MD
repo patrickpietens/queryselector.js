@@ -4,17 +4,17 @@ Returns null when no elements were found.
 
 ## Example
 ```javascript
-import $$ from 'queryselector.js';
+import $ from 'queryselector.js';
 
-let myFoo = $$('#foo');
+let myFoo = $('#foo');
 
 // A find method is added to the Node prototype:
-let myBar = myFoo.find('.bar');
+let myBar = myFoo.$('.bar');
 ```
 
 ## Installation
 ```bash
-$ npm install queryselector.js --save
+$ npm install --save queryselector.js
 ```
 
 ## License
