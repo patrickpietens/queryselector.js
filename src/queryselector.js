@@ -36,7 +36,7 @@ const queryselector = (selectors, context) => {
  */
 if (!Node.prototype.find) {
 	window.find = Node.prototype.find = function(selector) {
-		return select(this, selector);
+		return queryselector(this, selector);
 	};
 }
 
@@ -48,6 +48,6 @@ if (!Node.prototype.find) {
  */
 if (!Node.prototype.$) {
 	window.$ = Node.prototype.$ = function(selector) {
-		return select(this, selector);
+		return queryselector(this, selector);
 	};
 }
