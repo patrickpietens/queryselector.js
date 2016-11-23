@@ -12,19 +12,19 @@ const queryselector = (selector, context) => {
 		throw new Error('Required argument selector is not a String or undefined');
 	}
 
-	let myResult;
+	let result;
 	if (context instanceof Node) {
-        myResult = context.querySelectorAll(selector);
+        result = context.querySelectorAll(selector);
 	} else {
-		myResult = document.querySelectorAll(selector);
+		result = document.querySelectorAll(selector);
 	}
 
-	if (myResult.length === 0) {
+	if (result.length === 0) {
 		return null;
-	} else if (myResult.length === 1) {
-		return myResult[0];
+	} else if (result.length === 1) {
+		return result[0];
 	} else {
-		return myResult;
+		return result;
 	}
 };
 
@@ -35,7 +35,7 @@ const queryselector = (selector, context) => {
  * @param  {String} selector    	String representing the specific CSS selector
  */
 if (!Node.prototype.find) {
-	window.find = Node.prototype.find = function(selector) {
+	window.find = Node.prototype.find = NodeList.prototype.find = function(selector) {
 		return queryselector(selector, this);
 	};
 }
@@ -47,7 +47,7 @@ if (!Node.prototype.find) {
  * @param  {String} selector    	String representing the specific CSS selector
  */
 if (!Node.prototype.$) {
-	window.$ = Node.prototype.$ = function(selector) {
+	window.$ = Node.prototype.$ = NodeList.prototype.$ = function(selector) {
 		return queryselector(selector, this);
 	};
 }

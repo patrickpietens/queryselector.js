@@ -1,6 +1,6 @@
 {
   "name": "queryselector.js",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Helper function returning all elements in the DOM that matches a specified CSS selector",
   "main": "dist/queryselector.js",
   "scripts": {
