@@ -6,11 +6,9 @@ const gulpif = require('gulp-if');
 const notify = require('gulp-notify');
 const uglify = require('gulp-uglify');
 const umd = require('gulp-umd');
-const util = require('gulp-util');
 
 function onError() {
     notify.onError({ title: 'Compile Error', message: '<%= error.message %>' }).apply(this, arguments);
-    util.beep();
 };
 
 const isProduction = process.env.NODE_ENV === 'production';

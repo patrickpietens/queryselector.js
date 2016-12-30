@@ -1,10 +1,11 @@
 # queryselector.js
 Helper function returning all elements in the DOM that matches a specified CSS selector.
-Returns null when no elements were found.
+The function returns a single element when selector starts with a sign character: `#foo`. It returns a NodeList for all other cases.
+
 
 ## Installation
 ```bash
-$ npm install --save queryselector.js
+$ npm i --save queryselector.js
 ```
 
 ## Example
@@ -13,6 +14,6 @@ import $ from 'queryselector.js';
 
 let myFoo = $('#foo');
 
-// A find method is added to the Node prototype:
+// A convenience method is added to the Node and NodeList prototypes:
 let myBar = myFoo.$('.bar');
 ```
