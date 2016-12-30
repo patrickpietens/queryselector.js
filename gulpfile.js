@@ -23,7 +23,8 @@ gulp.task('default', () => {
     };
 
     const babelOptions = {
-        presets: ['es2015'],
+        presets: ['latest'],
+        plugins: ['transform-es2015-parameters'],
     };
 
     return gulp.src(source)

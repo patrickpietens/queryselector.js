@@ -7,7 +7,7 @@
  * @param  {Node} context 			Node object on which the `querySelectorAll` function is invoked.
  * @return {Nodelist|Node}
  */
-const queryselector = (selector, context) => {
+const queryselector = (selector, context = document) => {
 	if (typeof selector !== 'string') {
 		throw new Error('Required argument selector is not a String or undefined');
 	}
